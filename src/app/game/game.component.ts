@@ -10,7 +10,11 @@ import { COORD, BoardProcessed } from "../generator";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GameComponent implements OnInit {
-  constructor() {}
+  constructor(private BS: BoardService) {}
+
+  get obsSudo(): Observable<BoardProcessed> {
+    return this.BS.observable;
+  }
 
   ngOnInit(): void {}
 }

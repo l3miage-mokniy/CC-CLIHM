@@ -1,4 +1,16 @@
 Sudoku.component.html à compléter...
 <pre>
+<table style="border: 1px solid black;"><tr><td></td><td></td></tr><tr><td></td><td></td></tr></table>
+ 
+<table>
+  <tbody>
+      <tr *ngFor="let item of board.data;">
+        <td *ngFor="let case of item;">
+          {{case}}
+        </td>
+      </tr>
+  </tbody>
+</table>
+ 
   {{ board | json }}
 </pre>
