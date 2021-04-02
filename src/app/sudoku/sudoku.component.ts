@@ -21,4 +21,7 @@ export class SudokuComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  isInternal(n: number, s: number): boolean {
+    return false;
+  }
 }
