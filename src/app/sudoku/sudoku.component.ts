@@ -23,6 +23,11 @@ export class SudokuComponent implements OnInit {
 
   isInternal(n: number, s: number): boolean {
     console.log(Math.sqrt(s));
-    return false;
+    console.log(n);
+    if (n % Math.sqrt(s) === 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

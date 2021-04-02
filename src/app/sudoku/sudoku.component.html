@@ -1,8 +1,9 @@
 Sudoku.component.html à compléter...
 <table>
   <tbody>
-    <tr *ngFor="let item of board.data; index as i;">
-      <td [class.internalBorder]="isInternal(i,board.size)" [class.isInitial]="case !== 0" *ngFor="let case of item;">
+    <tr [class.internalBorder]="isInternal(i,board.size)" *ngFor="let item of board.data; index as i;">
+      <td [class.internalBorder]="isInternal(j,board.size)" [class.isInitial]="case !== 0"
+        *ngFor="let case of item; index as j;">
         <div *ngIf="case !== 0">
           {{case}}
         </div>
