@@ -22,6 +22,7 @@ export class SudokuComponent implements OnInit {
   ngOnInit(): void {}
 
   isInternal(n: number, s: number): boolean {
+    console.log(Math.sqrt(s));
     return false;
   }
 }
